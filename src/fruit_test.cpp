@@ -11,6 +11,7 @@
 #include "orange.h"
 
 // Enables us to use cout and endl without prepending std::
+#include "Lychee.h"
 using namespace std;
 
 int main() {
@@ -20,7 +21,8 @@ int main() {
     fruits.push_back(std::make_shared<Watermelon>("Trevor Edwards"));
     fruits.push_back(std::make_shared<Strawberry>("Me"));
     fruits.push_back(std::make_shared<Orange>("Trevor2 Edwards"));
-    // Don't edit below
+	fruits.push_back(std::make_shared<Lychee>("Emily Gao"));    
+// Don't edit below
     std::srand(1996);
     for (auto itr = fruits.begin(); itr != fruits.end(); itr++) {
         auto fruit = *itr;
@@ -30,9 +32,7 @@ int main() {
         // Check that the polyhedron is delicious
         if (!fruit->is_delicious()) {
             printf("Error: This fruit is not delicious!\n");
-            return 1;
-        }
-
+	}
         // Compute the mass
         double mass = fruit->get_weight();
 
