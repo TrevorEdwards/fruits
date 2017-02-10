@@ -9,6 +9,7 @@
 #include "watermelon.h"
 #include "strawberry.h"
 #include "orange.h"
+#include "peach.h"
 
 // Enables us to use cout and endl without prepending std::
 using namespace std;
@@ -20,6 +21,7 @@ int main() {
     fruits.push_back(std::make_shared<Watermelon>("Trevor Edwards"));
     fruits.push_back(std::make_shared<Strawberry>("Me"));
     fruits.push_back(std::make_shared<Orange>("Trevor2 Edwards"));
+	fruits.push_back(std::make_shared<Peach>("Seungyeon Chelsea Han"));
     // Don't edit below
     std::srand(1996);
     for (auto itr = fruits.begin(); itr != fruits.end(); itr++) {
