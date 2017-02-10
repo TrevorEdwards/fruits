@@ -6,6 +6,7 @@ Orange::Orange(std::string author) : Fruit(author) {
 
 Orange::~Orange() {}
 
+
 std::string Orange::get_name() {
 	return "Orange";
 }
