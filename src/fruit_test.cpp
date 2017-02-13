@@ -8,7 +8,6 @@
 
 #include "fruit.h"
 #include "watermelon.h"
-#include "strawberry.h"
 #include "orange.h"
 
 #include "honeydew.h"
@@ -21,6 +20,7 @@ int main() {
 
     // Add your name and fruit  here!
     fruits.push_back(std::make_shared<Watermelon>("Trevor Edwards"));
+    fruits.push_back(std::make_shared<Orange>("Anmol Kabra"));
     fruits.push_back(std::make_shared<HoneyDew>("Lucas Switzer"));
     fruits.push_back(std::make_shared<Orange>("Nicolas Buitrago"));
     fruits.push_back(std::make_shared<Orange>("Ning Wang"));
