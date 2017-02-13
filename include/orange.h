@@ -1,8 +1,8 @@
+
 #ifndef _ORANGE
 #define _ORANGE
 
 #include <string>
-
 #include "fruit.h"
 
 class Orange : public Fruit {
@@ -15,6 +15,5 @@ public:
     virtual double get_weight();
     virtual bool is_delicious();
 };
-
 #endif
 
